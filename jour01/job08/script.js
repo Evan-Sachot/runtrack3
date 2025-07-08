@@ -1,5 +1,18 @@
 function sommenombrespremiers(){
- 
+for (i=2; i < a; i++){
+if (a%i == 0 || b%i == 0) {
+return false;
 }
-var a=parseInt(prompt(""));
-var b = parseInt(prompt(""));
+else{
+    console.log(a+b)
+    return true;
+}
+}
+
+}
+
+
+let a = parseInt(prompt());
+let b = parseInt(prompt());
+console.log(sommenombrespremiers());
+sommenombrespremiers();
