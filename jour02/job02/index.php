@@ -7,6 +7,8 @@
 
 </head>
 <body>
+    <button onclick="showhide()">article</button>
+    <article id="article">L'important n'est pas la chute, mais l'atterrissage.</article>
    <script src="script.js"></script>
 </body>
 </html>
