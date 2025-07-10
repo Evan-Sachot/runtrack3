@@ -8,8 +8,9 @@
 
 </head>
 <body id="body">
+    <p>activer le theme</p>
+   <button onclick="change()">theme</button>
    
-   <footer id="footer">fqsfqsklfjlqsiflkjqsflkjfsqlkjljkfsq</footer>
    <script src="script.js"></script>
 </body>
 </html>
