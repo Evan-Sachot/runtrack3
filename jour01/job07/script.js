@@ -2,7 +2,7 @@ function jourtravaille(date){
     for (var i=0; i < jourferie.length; i++) {
 if (a <= jourferie[i]) 
 {
-    console.log("jour ferié");
+    console.log(a+"jour ferié");
 } 
 else 
 {
@@ -12,7 +12,7 @@ else
 }
 let day = a.getDay();    // date = new Date();
 if (day==0  || day==6){
-console.log("week end")
+console.log(a +" est un week end")
 }
 }
 const jourferie = [
