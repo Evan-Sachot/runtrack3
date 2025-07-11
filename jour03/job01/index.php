@@ -9,9 +9,9 @@
 
 </head>
 <body>
-    <p>Les logiciels et les cathédrales, c'est un peu la même chose - d'abord on les construit,
-ensuite on prie.</p>
-    <button id="button1">citation console</button>
+    <p></p>
+    <button id="button1">hide</button>
+    <button id="button2">show</button>
    
 </body>
 </html>
