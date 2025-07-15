@@ -7,3 +7,4 @@ document.getElementById("para").innerHTML=y
 )})
 
 })
+console.log("A")
