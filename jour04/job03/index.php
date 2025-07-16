@@ -10,5 +10,6 @@
 </head>
 <body>
 <button id="filtrer">filtrer</button>
+<input type="text" id="nameinput">
 </body>
 </html>
