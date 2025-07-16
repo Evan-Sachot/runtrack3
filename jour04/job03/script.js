@@ -1,18 +1,25 @@
+
+
 $(document).ready(function(){
 function jsonValueKey(json,key){
 return json[key]
 }
 $("#filtrer").click(function(){
-    console.log("aaaaaaaaaaa");
-   let name= "Bulbasaur";
+let name = document.getElementById("nameinput").value
+let id = document.getElementById("id").value
+
 fetch("pokemon.json").then(
 function(u){return u.json();}
 ).then
 (
 function(json){
 data = json;
-var item = data.find(item => item.name.english === name);
+if (name === undefined)
+var item = data.find(item => item.name.english || item.name.french || item.name.chinese || item.name.japanese  === name);
+item = data.find(item => item.id === id)
 console.log(item.name);
+console.log(item.id)
+console.log(item.type)
 }
 )
 
