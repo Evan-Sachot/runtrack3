@@ -8,25 +8,79 @@
 
 </head>
 <body>
-    <ul style="display: inline-flex; list-style-type: none;" id="myList">
-  <li id="1"><img id="img1" src="arc1.png" alt=""></li>
-  <li id="2"><img id="img2" src="arc2.png" alt=""></li>
-  <li id="3"><img id="img3" src="arc3.png" alt=""></li>
-  <li id="4"><img id="img4" src="arc4.png" alt=""></li>
-  <li id="5"><img id="img5" src="arc5.png" alt=""></li>
-  <li id="6"><img id="img6" src="arc6.png" alt=""></li>
-</ul>
+  <div id="imagebox" >
+   <div class="draggable" id="imageContainer1" data-start-top="50" data-start-left="50">
+    <img src="arc1.png" alt="img1">
+  </div>
+  <div class="draggable" id="imageContainer2" data-start-top="50" data-start-left="160">
+    <img src="arc2.png" alt="img2">
+  </div>
+  <div class="draggable" id="imageContainer3" data-start-top="50" data-start-left="270">
+    <img src="arc3.png" alt="img3">
+  </div>
+  <div class="draggable" id="imageContainer4" data-start-top="50" data-start-left="380">
+    <img src="arc4.png" alt="img4">
+  </div>
+  <div class="draggable" id="imageContainer5" data-start-top="50" data-start-left="490">
+    <img src="arc5.png" alt="img5">
+  </div>
+  <div class="draggable" id="imageContainer6" data-start-top="50" data-start-left="600">
+    <img src="arc6.png" alt="img6">
+  </div>
+  <div class="dropzone1" id="1"></div>
+  <div class="dropzone2" id="2" ></div>
+  <div class="dropzone3" id="3"></div>
+  <div class="dropzone4" id="4"></div>
+  <div class="dropzone5" id="5"></div>
+  <div class="dropzone6"id="6"></div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <div id="buttonbox" style="display: inline-flex">
-<button id="button1">image 1</button>
-<button id="button2">image 2</button>
-<button id="button3">image 3</button>
-<button id="button4">image 4</button>
-<button id="button5">image 5</button>
-<button id="button6">image 6</button>
 <button id="buttonreset">reset</button>
 </div>
 <br>
 <button id="randomize">randomize</button>
+<button id="verify">verifier</button>
 <script src="script.js"></script>
 </body>
 </html>
+<style>
+  .draggable {
+    position: absolute;
+    cursor: grab;
+     z-index: 10;
+  }
+  [class^="dropzone"] {
+  width: 100px; 
+    height: 300px;
+  border: 2px dashed gray;
+  position: absolute;
+  display: inline-flex;
+  z-index: 1;
+}
+
+  
+
+  img {
+    width: 100px; 
+    height: auto;
+    user-drag: none;
+    -webkit-user-drag: none;
+    pointer-events: none; 
+  }
+
+  .draggable img {
+    pointer-events: none; 
+  }
+  .dropzone1 { top: 200px; left: 50px; }
+.dropzone2 { top: 200px; left: 160px; }
+.dropzone3 { top: 200px; left: 270px; }
+.dropzone4 { top: 200px; left: 380px; }
+.dropzone5 { top: 200px; left: 490px; }
+.dropzone6 { top: 200px; left: 600px; }
+</style>
