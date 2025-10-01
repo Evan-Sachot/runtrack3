@@ -1,0 +1,15 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid, .container {
+    justify-self: center;
+}
+div {
+    border: 1px solid black;
+}
+
+.h-fix {
+    height: 10rem;
+}
